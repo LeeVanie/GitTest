@@ -35,6 +35,7 @@ public class MainActivity extends Activity implements LoginView,View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        int i = 5;
         loginLogin.setOnClickListener(this);
         loginRegist.setOnClickListener(this);
         presenter = new LoginPresenterImpl(this);
